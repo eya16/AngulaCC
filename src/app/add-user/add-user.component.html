@@ -1,0 +1,49 @@
+<div class="log m-5">
+
+
+    <div class="d-flex justify-content-center flex-column">
+
+        <h1>Add new User : </h1>
+<form [formGroup]="registerForm" (ngSubmit)="add()">
+        <div class="md-form form-sm">
+            <mdb-icon fas icon="envelope" class="prefix"></mdb-icon>
+            <input mdbInput type="email" id="email" class="form-control form-control-sm" formControlName="email">
+            <label for="form1" class="">Email</label>
+            <div class="alert alert-danger"*ngIf="email.errors && email.touched">
+                <div *ngIf="email.hasError('required')">*Email is required</div>
+                <div *ngIf="email.hasError('pattern')">*Email invalid pattern => must be like : *@*.*</div>
+            </div>
+        </div>
+          
+          <div class="md-form form-sm">
+            <mdb-icon fas icon="lock" class="prefix"></mdb-icon>
+            <input mdbInput type="password" id="password" class="form-control form-control-sm"formControlName="password">
+            <label for="form1" class="">Password</label>
+            <div class="alert alert-danger"*ngIf="password.errors && password.touched">
+                <div *ngIf="password.hasError('required')">*Password is required</div>
+                <div *ngIf="password.hasError('pattern')">*Password must contains :
+                    <ul>
+                    <li>
+                        At least 8 characters in length
+                    </li>
+                    <li>
+                        Lowercase letters
+                    </li>
+                    <li>
+                        Uppercase letters
+                    </li>
+                    <li>Numbers</li>
+                    <li>Special characters</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <button mdbBtn type="submit" [disabled]="registerForm.invalid" class="ml-3" color="indigo" mdbWavesEffect>Add</button>
+       
+    </form>
+    
+
+</div>

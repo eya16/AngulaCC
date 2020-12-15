@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+.icon-color {
+  background-color: #94536d !important;
+}
+
+body {
+  background-color: #f6e0a2;
+}
+.ngx-pagination {
+  padding-left: 0px !important;
+}
+
+.ngx-pagination .current,
+.btn-info {
+  background: #1c26b3 !important;
+  border: transparent !important;
+  border-radius: 20px !important;
+}
+
+.ngx-pagination .current:hover {
+  background: #17a2b8 !important;
+  border-radius: 20px !important; 
+  border: transparent !important;
+}

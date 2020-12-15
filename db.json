@@ -1,0 +1,131 @@
+{
+  "tasks": [
+    {
+      "id": 2,
+      "name": "football",
+      "type": "entertaiment",
+      "description": "aaaaccc",
+      "image": "football.jpg",
+      "importance": 20,
+      "state": "done",
+      "userId": 1
+    },
+    {
+      "importance": 80,
+      "name": "name",
+      "description": "description",
+      "type": "entertaiment",
+      "state": "done",
+      "image": "default.png",
+      "id": 3,
+      "userId": 1
+    },
+    {
+      "importance": 20,
+      "name": "name",
+      "description": "aaaaccc",
+      "type": "responsibility",
+      "state": "undone",
+      "image": "default.png",
+      "id": 4,
+      "userId": 2
+    },
+    {
+      "importance": 92,
+      "name": "name",
+      "description": "description",
+      "type": "responsibility",
+      "state": "done",
+      "image": "14.jpg",
+      "userId": 1,
+      "id": 8
+    },
+    {
+      "importance": 6,
+      "name": "name3",
+      "description": "description",
+      "type": "responsibility",
+      "state": "undone",
+      "image": "default.png",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "importance": 15,
+      "name": "name",
+      "description": "description",
+      "type": "responsibility",
+      "state": "done",
+      "image": "default.png",
+      "userId": 1,
+      "id": 11
+    },
+    {
+      "importance": 74,
+      "name": "name",
+      "description": "description",
+      "type": "responsibility",
+      "state": "undone",
+      "image": "default.png",
+      "userId": 5,
+      "id": 12
+    },
+    {
+      "importance": 22,
+      "name": "name",
+      "description": "aaaaccc",
+      "type": "entertaiment",
+      "state": "done",
+      "image": "default.png",
+      "userId": 5,
+      "id": 13
+    },
+    {
+      "importance": 21,
+      "name": "name",
+      "description": "description",
+      "type": "responsibility",
+      "state": "undone",
+      "image": "study.jpg",
+      "userId": 5,
+      "id": 14
+    },
+    {
+      "importance": 86,
+      "name": "name",
+      "description": "description",
+      "state": "undone",
+      "type": "responsibility",
+      "image": "14.jpg",
+      "userId": 1,
+      "id": 15
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "qsd@qsd.com",
+      "password": "Admin@123"
+    },
+    {
+      "id": 2,
+      "email": "qsd2@qsd.com",
+      "password": "Admin2@123"
+    },
+    {
+      "email": "qsd33@qsd.com",
+      "password": "Admin@123",
+      "id": 3
+    },
+    {
+      "email": "qsd55@qsd.com",
+      "password": "Admin@123",
+      "id": 4
+    },
+    {
+      "email": "qsd66@qsd.com",
+      "password": "Admin@123",
+      "id": 5
+    }
+  ]
+}

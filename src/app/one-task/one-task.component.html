@@ -1,0 +1,37 @@
+<div class="view rgba-white-slight waves-light" mdbWavesEffect>
+    <!-- Card img -->
+    <img src="/assets/images/{{task.image}}" class="img-fluid" alt="task">
+  <!--  <mdb-card-img src="/assets/images/{{task.image}}" alt="Card image cap" ></mdb-card-img> -->
+    <a>
+      <div class="mask"></div>
+    </a>
+  </div>
+  <!--Card content-->
+  <mdb-card-body>
+    <!--Title-->
+    <mdb-card-title>
+      <h4  class="pl-3">{{task.name}}</h4>
+    </mdb-card-title>
+   
+    <!--Text-->
+    <mdb-card-text class="pl-3"> 
+      <b>Type :</b> {{task.type}}
+    </mdb-card-text>
+    <mdb-card-text class="pl-3"> 
+        <b>Description:</b> {{task.description}}
+      </mdb-card-text>
+      <mdb-card-text class="pl-3"> 
+        <b>Importance :</b> {{task.importance}}<span *ngIf="task.importance>75" id="important" class="ml-3"> Important !  <mdb-icon fas icon="exclamation-triangle"></mdb-icon></span>
+      </mdb-card-text>
+      <mdb-card-text class="pl-3"> 
+        <b>State : {{task.state}} </b> <mdb-icon fas icon="check" size="2x" [ngClass]="{
+        'green-text pr-3':task.state === 'done',
+        'red-text pr-3':task.state === 'undone'
+        }"   
+        ></mdb-icon>
+      </mdb-card-text>
+      <div class="card-footer">
+    <a [routerLink]=" ['edit',task.id] ">  <mdb-icon far icon="edit" size="2x" class="black-text pr-3"></mdb-icon></a>
+    <a (click)="deleteTask()"> <mdb-icon fas icon="eraser" size="2x" class="red-text pr-3"></mdb-icon></a>
+    </div>
+  </mdb-card-body>
