@@ -5,7 +5,7 @@ import { ChercherService } from '../shared/chercher.service';
 import { TasksService } from '../shared/tasks.service';
 
 @Component({
-  selector: 'app-main',
+    selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })
@@ -21,7 +21,7 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.userId = this.serviceRoute.snapshot.params.userId;
- 
+
 
 
     this.tasksService.getAllTasks(this.userId).subscribe(
@@ -30,7 +30,7 @@ export class MainComponent implements OnInit {
       ()=>{}
     );
     console.log(this.tasks);
-    
+
   }
   deleteTask(id:number){
     this.tasksService.deleteTask(id.toString()).subscribe(

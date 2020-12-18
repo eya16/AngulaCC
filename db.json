@@ -52,7 +52,7 @@
     },
     {
       "importance": 15,
-      "name": "name",
+      "name": "name2",
       "description": "description",
       "type": "responsibility",
       "state": "done",
@@ -61,17 +61,17 @@
       "id": 11
     },
     {
-      "importance": 74,
+      "importance": 50,
       "name": "name",
       "description": "description",
       "type": "responsibility",
-      "state": "undone",
-      "image": "default.png",
+      "state": "done",
+      "image": "14.jpg",
       "userId": 5,
       "id": 12
     },
     {
-      "importance": 22,
+      "importance": 78,
       "name": "name",
       "description": "aaaaccc",
       "type": "entertaiment",
@@ -99,6 +99,66 @@
       "image": "14.jpg",
       "userId": 1,
       "id": 15
+    },
+    {
+      "importance": 48,
+      "name": "gtrgtrg",
+      "description": "fb",
+      "type": "entertaiment",
+      "state": "done",
+      "image": "14.jpg",
+      "userId": 4,
+      "id": 16
+    },
+    {
+      "importance": 76,
+      "name": "task2",
+      "description": "task2 is ..............",
+      "type": "responsibility",
+      "state": "undone",
+      "image": "logo.png",
+      "userId": 5,
+      "id": 18
+    },
+    {
+      "importance": 81,
+      "name": "nameeee",
+      "description": "ooooo",
+      "type": "responsibility",
+      "state": "undone",
+      "image": "14.jpg",
+      "userId": 6,
+      "id": 19
+    },
+    {
+      "importance": 91,
+      "name": "lekfhlekfhelkrhf",
+      "description": "kchkdlhvkld",
+      "type": "entertaiment",
+      "state": "done",
+      "image": "logo.png",
+      "userId": 4,
+      "id": 20
+    },
+    {
+      "importance": 98,
+      "name": "edeiriy'yry'",
+      "description": "kdfhklerhfkerfhelk",
+      "type": "responsibility",
+      "state": "done",
+      "image": "study.jpg",
+      "userId": 4,
+      "id": 21
+    },
+    {
+      "importance": 98,
+      "name": "eya",
+      "description": "ks",
+      "type": "responsibility",
+      "state": "done",
+      "image": "default.png",
+      "userId": 4,
+      "id": 22
     }
   ],
   "users": [
@@ -126,6 +186,11 @@
       "email": "qsd66@qsd.com",
       "password": "Admin@123",
       "id": 5
+    },
+    {
+      "email": "qs101010@qsd.com",
+      "password": "Admin@123",
+      "id": 6
     }
   ]
 }
